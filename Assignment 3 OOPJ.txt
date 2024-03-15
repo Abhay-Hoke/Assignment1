@@ -1,0 +1,102 @@
+Assignment 3 OOPJ
+================================================================
+1) Write a program that demonstrates widening conversion from int to double and prints the result. 
+
+package in.acts.cdac;
+
+import java.util.Scanner;
+
+public class Program1 {
+
+	public static void main(String[] args) {
+		Scanner sc =new Scanner(System.in);
+		System.out.print("Enter An Integer: ");
+		int a = sc.nextInt();
+		double b = (double)a;
+		//double b= a;
+		System.out.println("Integer To Double : "+b);
+		// TODO Auto-generated method stub
+
+	}
+
+}
+---------------------------
+Enter An Integer: 88
+Integer To Double : 88.0
+-----------------------------------------------------------------------------------
+2) Create a program that demonstrates narrowing conversion from double to int and prints the result.
+
+package in.acts.cdac;
+import java.util.Scanner;
+
+public class Program2 {
+
+	public static void main(String[] args) {
+		Scanner sc =new Scanner(System.in);
+		System.out.print("Enter A Double: ");
+		double a = sc.nextDouble();
+		int b = (int)a;
+	
+		System.out.println("Double to Integer : "+b);
+		// TODO Auto-generated method stub
+
+	}
+
+}
+------------------
+Enter A Double: 55.6
+Double to Integer : 55
+------------------------------------------------------------------------------------
+3) Write a program that performs arithmetic operations involving different data types (int, double, float) and observes how Java handles widening conversions automatically.
+
+package in.acts.cdac;
+//import java.util.Scanner;
+public class Program3 {
+
+	public static void main(String[] args) {
+		//Scanner sc = new Scanner(System.in);
+		int a = 2;//sc.nextInt();
+		System.out.println("Int a: "+a);
+		float b = 11.33f;//sc.nextFloat();
+		System.out.println("Float b: "+b);
+		double c = b/a;
+		
+		System.out.println("Automatic Conversion Through Widening c=b/a ");
+		System.out.println(c);
+		// TODO Auto-generated method stub
+
+	}
+
+}
+------------------------------
+Int a: 2
+Float b: 11.33
+Automatic Conversion Through Widening c=b/a 
+5.664999961853027
+-------------------------------------------------------------------------
+4) Write a Program that demonstrates widening conversion from int to (double,float, boolean, string) and prints the result.
+
+package in.acts.cdac;
+
+public class Program4 {
+
+	public static void main(String[] args) {
+		int a = 10;
+		float b = a;
+		double c = a;
+		String str = Integer.toString(a);
+		System.out.println("int : "+a);
+		System.out.println("int to float: "+b);
+		System.out.println("int to Double : "+c);
+		System.out.println("we cannot convert Booleanvalue into any other type ");
+		// TODO Auto-generated method stub
+
+	}
+
+}
+---------------------------------------------------
+int : 10
+int to float: 10.0
+int to Double : 10.0
+we cannot convert Booleanvalue into any other type 
+
